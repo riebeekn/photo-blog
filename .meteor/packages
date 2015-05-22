@@ -9,3 +9,8 @@ iron:router
 twbs:bootstrap
 sacha:spin
 chrismbeckett:toastr
+raix:ui-dropped-event
+cfs:standard-packages
+cfs:s3
+cfs:gridfs
+reactive-var
