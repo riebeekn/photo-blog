@@ -1,0 +1,25 @@
+.image-info {
+  color: #888;
+  font-family: Rockwell,Georgia,Arial;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background-color: #fff;
+  display: block;
+  padding: 4px;
+  margin-bottom: 5px;
+  line-height: 1.42857143;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.delete-image {
+  cursor: pointer;
+}
+
+.delete-image:hover {
+  text-decoration: none;
+}

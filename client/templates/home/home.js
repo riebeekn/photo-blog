@@ -5,7 +5,7 @@ Template.home.created = function() {
   self.limit.set(parseInt(Meteor.settings.public.recordsPerPage));
   
   Deps.autorun(function() {
-    Meteor.subscribe('images', self.limit.get());
+    Meteor.subscribe('images', self.limit.get(), Router.current().params.username);
   })
 }
 
@@ -21,7 +21,7 @@ Template.home.rendered = function() {
 
 Template.home.helpers({
   'images': function() {
-    return Images.find();
+    return Images.find({}, {sort:{uploadedAt:-1}});
   }
 });
 

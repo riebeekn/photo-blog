@@ -14,3 +14,8 @@ cfs:standard-packages
 cfs:s3
 cfs:gridfs
 reactive-var
+accounts-password
+ian:accounts-ui-bootstrap-3
+msavin:mongol
+momentjs:moment
+natestrauser:font-awesome
