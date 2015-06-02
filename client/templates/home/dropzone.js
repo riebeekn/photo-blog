@@ -6,6 +6,7 @@ Template.dropzone.events({
       var newFile = new FS.File(file);
       newFile.username = user.username;
       newFile.userId = user._id;
+      newFile.userSlug = Slug.slugify(user.username);
       
       Images.insert(newFile, function (error, fileObj) {
         if (error) {

@@ -1,8 +1,8 @@
-Meteor.publish('images', function(limit, username) {
+Meteor.publish('images', function(limit, userSlug) {
 
 	var findQuery = {};
-	if (username) {
-		findQuery = { username : username };
+	if (userSlug) {
+		findQuery = { userSlug : userSlug };
 	}
 
   return Images.find(findQuery, {
