@@ -6,7 +6,7 @@ Template.home.created = function() {
   
   Deps.autorun(function() {
     Meteor.subscribe('images', self.limit.get(), Router.current().params.userSlug);
-  })
+  });
 }
 
 Template.home.rendered = function() {
