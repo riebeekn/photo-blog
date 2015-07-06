@@ -4,7 +4,7 @@ Template.home.created = function() {
   self.limit = new ReactiveVar;
   self.limit.set(parseInt(Meteor.settings.public.recordsPerPage));
   
-  Deps.autorun(function() {
+  Tracker.autorun(function() {
     Meteor.subscribe('images', self.limit.get(), Router.current().params.userSlug);
   });
 }
