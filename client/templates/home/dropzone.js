@@ -12,6 +12,13 @@ Template.dropzone.events({
         if (error) {
     		  toastr.error("Upload failed... please try again.");
         } else {
+          Meteor.setTimeout(function() {
+            if (fileObj.isUploaded()) {
+              console.log('Root URL: ' + Meteor.absoluteUrl());
+              console.log('Image URL: ' + fileObj.url());
+              console.log('Full image URL: ' + Meteor.absoluteUrl(fileObj.url()));
+            }
+          }, 2000);
           toastr.success('Upload succeeded!');
         }
       });
