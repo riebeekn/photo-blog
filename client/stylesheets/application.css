@@ -2,3 +2,8 @@ body {
   background: #eee;
   color: #666666; 
 }
+
+.thumbnails{
+	height:450px;
+	word-wrap:break-word;
+}
